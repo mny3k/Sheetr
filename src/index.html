@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/obs-websocket-js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script defer type="module" src="main.js"></script>
+  <style>
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="update">Update</button><br>
+  <div class="row">
+    <div class="column">
+      <h3>Text</h3>
+      <div id="textDiv">
+        <label id="selectLabel">Select Source:</label>
+          <select class="sourceList" id="sourceList"></select>
+        <label id="cellLabel">Choose Cell:</label>
+          <input class="sourceCell" id="sourceCell" type="text"><br id="selectorBreak">
+      </div>
+      <button id="addtextRow">+</button>
+      <button id="deletetextRow">-</button><br>
+      <br>
+    </div>
+    <div class="column">
+      <h3>Images</h3>
+      <div id="imgDiv">
+        <label id="imgselectLabel">Select Source:</label>
+          <select class="imgsourceList" id="imgsourceList"></select>
+        <label id="imgcellLabel">Choose Cell:</label>
+          <input class="imgsourceCell" id="imgsourceCell" type="text"><br id="imgselectorBreak">
+      </div>
+      <button id="addimgRow">+</button>
+      <button id="deleteimgRow">-</button><br>
+      <br>
+    </div>
+  </div>
+</body>
+</html>

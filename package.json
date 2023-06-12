@@ -1,0 +1,15 @@
+{
+  "name": "sheetr",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.3.1"
+  },
+  "dependencies": {
+    "obs-websocket-js": "^5.0.3"
+  }
+}
